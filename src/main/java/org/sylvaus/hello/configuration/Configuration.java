@@ -5,7 +5,7 @@ import javax.inject.Singleton;
 import java.util.Locale;
 
 @Singleton
-public class Configuration {
+public class Configuration implements IConfiguration{
 
     @Inject
     public Configuration() {

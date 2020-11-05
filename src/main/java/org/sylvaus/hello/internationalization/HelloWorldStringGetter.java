@@ -1,16 +1,17 @@
 package org.sylvaus.hello.internationalization;
 
 import org.sylvaus.hello.configuration.Configuration;
+import org.sylvaus.hello.configuration.IConfiguration;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
 public class HelloWorldStringGetter implements IHelloWorldStringGetter {
-    private Configuration configuration;
+    private IConfiguration configuration;
 
     @Inject
-    public HelloWorldStringGetter(Configuration configuration) {
+    public HelloWorldStringGetter(IConfiguration configuration) {
         this.configuration = configuration;
     }
 
